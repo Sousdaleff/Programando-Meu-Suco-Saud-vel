@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de Sucos Naturais</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo-escola.png" alt="Logo da Escola" class="logo">
+        <div class="header-text">
+            <h1>Escola Estadual Profª Ivone S. Castanharo - NRE - Campo Mourão PR - SEED PR</h1>
+            <h2>Equipe Diretiva Profª Tânia Sidnei e Renato Nascimento e Pedagoga Profª Ednéia S. Lima</h2>
+            <h3>Matemática II - Profª Mirian Sousdaleff Laczkowski</h3>
+            <h4>Vitor Vitoria Sínthia Letícia</h4>
+        </div>
+    </header>
+    
+    <main>
+        <section id="grafico">
+            <h2>Consumo de Sucos Naturais no Brasil</h2>
+            <canvas id="consumoGrafico" width="400" height="200"></canvas>
+            <!-- Campos de edição para os nomes do eixo X -->
+            <div id="editNames">
+                <label for="suco1">Suco 1:</label>
+                <input type="text" id="suco1" value="Suco Natural">
+                <label for="suco2">Suco 2:</label>
+                <input type="text" id="suco2" value="Suco de Laranja">
+                <label for="suco3">Suco 3:</label>
+                <input type="text" id="suco3" value="Suco Verde">
+                <label for="suco4">Suco 4:</label>
+                <input type="text" id="suco4" value="Outros">
+                <button onclick="atualizarEixoX()">Atualizar Eixo X</button>
+            </div>
+        </section>
+        
+        <section id="flashcards">
+            <h2>Benefícios</h2>
+            <div class="flashcard" id="flashcard1">
+                <h3>Benefícios do Suco Natural</h3>
+                <p id="beneficio1">Função intestinal, antioxidante e antienvenlhecimento.</p>
+                <button onclick="editarFlashcard('beneficio1')">Editar</button>
+            </div>
+            <div class="flashcard" id="flashcard2">
+                <h3>Benefícios do Alimento Funcional</h3>
+                <p id="beneficio2">Contribui para a melhoria do aspecto da pele.</p>
+                <button onclick="editarFlashcard('beneficio2')">Editar</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Desenvolvido para estudo de hábitos alimentares saudáveis.</p>
+        <p>&copy; 2024 Colégio Estadual Profª Ivone S. Castanharo. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
